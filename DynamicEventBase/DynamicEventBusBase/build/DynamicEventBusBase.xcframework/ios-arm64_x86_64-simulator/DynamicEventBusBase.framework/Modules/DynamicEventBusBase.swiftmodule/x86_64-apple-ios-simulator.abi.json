@@ -1,0 +1,567 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "DynamicEventBusBase",
+    "printedName": "DynamicEventBusBase",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DynamicEventBusBase"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EventBusProvider",
+        "printedName": "EventBusProvider",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "setEventBus",
+            "printedName": "setEventBus(eventBus:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DynamicEventBusInterface",
+                "printedName": "any DynamicEventBusBase.DynamicEventBusInterface",
+                "usr": "s:19DynamicEventBusBase0abC9InterfaceP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19DynamicEventBusBase0bC8ProviderC03setbC005eventC0yAA0abC9Interface_p_tFZ",
+            "mangledName": "$s19DynamicEventBusBase0bC8ProviderC03setbC005eventC0yAA0abC9Interface_p_tFZ",
+            "moduleName": "DynamicEventBusBase",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getEventBus",
+            "printedName": "getEventBus()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any DynamicEventBusBase.DynamicEventBusInterface)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DynamicEventBusInterface",
+                    "printedName": "any DynamicEventBusBase.DynamicEventBusInterface",
+                    "usr": "s:19DynamicEventBusBase0abC9InterfaceP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19DynamicEventBusBase0bC8ProviderC03getbC0AA0abC9Interface_pSgyFZ",
+            "mangledName": "$s19DynamicEventBusBase0bC8ProviderC03getbC0AA0abC9Interface_pSgyFZ",
+            "moduleName": "DynamicEventBusBase",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:19DynamicEventBusBase0bC8ProviderC",
+        "mangledName": "$s19DynamicEventBusBase0bC8ProviderC",
+        "moduleName": "DynamicEventBusBase",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DynamicEventListener",
+        "printedName": "DynamicEventListener",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onEventReceived",
+            "printedName": "onEventReceived(eventType:eventData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19DynamicEventBusBase0aB8ListenerP02onB8Received9eventType0H4DataySS_ypSgtF",
+            "mangledName": "$s19DynamicEventBusBase0aB8ListenerP02onB8Received9eventType0H4DataySS_ypSgtF",
+            "moduleName": "DynamicEventBusBase",
+            "genericSig": "<τ_0_0 where τ_0_0 : DynamicEventBusBase.DynamicEventListener>",
+            "sugared_genericSig": "<Self where Self : DynamicEventBusBase.DynamicEventListener>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:19DynamicEventBusBase0aB8ListenerP",
+        "mangledName": "$s19DynamicEventBusBase0aB8ListenerP",
+        "moduleName": "DynamicEventBusBase",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DynamicEventBusInterface",
+        "printedName": "DynamicEventBusInterface",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "addEventListener",
+            "printedName": "addEventListener(listener:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DynamicEventListener",
+                "printedName": "any DynamicEventBusBase.DynamicEventListener",
+                "usr": "s:19DynamicEventBusBase0aB8ListenerP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19DynamicEventBusBase0abC9InterfaceP03addB8Listener8listeneryAA0abG0_p_tF",
+            "mangledName": "$s19DynamicEventBusBase0abC9InterfaceP03addB8Listener8listeneryAA0abG0_p_tF",
+            "moduleName": "DynamicEventBusBase",
+            "genericSig": "<τ_0_0 where τ_0_0 : DynamicEventBusBase.DynamicEventBusInterface>",
+            "sugared_genericSig": "<Self where Self : DynamicEventBusBase.DynamicEventBusInterface>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeEventListener",
+            "printedName": "removeEventListener(listener:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DynamicEventListener",
+                "printedName": "any DynamicEventBusBase.DynamicEventListener",
+                "usr": "s:19DynamicEventBusBase0aB8ListenerP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19DynamicEventBusBase0abC9InterfaceP06removeB8Listener8listeneryAA0abG0_p_tKF",
+            "mangledName": "$s19DynamicEventBusBase0abC9InterfaceP06removeB8Listener8listeneryAA0abG0_p_tKF",
+            "moduleName": "DynamicEventBusBase",
+            "genericSig": "<τ_0_0 where τ_0_0 : DynamicEventBusBase.DynamicEventBusInterface>",
+            "sugared_genericSig": "<Self where Self : DynamicEventBusBase.DynamicEventBusInterface>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dispatch",
+            "printedName": "dispatch(eventType:eventData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19DynamicEventBusBase0abC9InterfaceP8dispatch9eventType0G4DataySS_ypSgtF",
+            "mangledName": "$s19DynamicEventBusBase0abC9InterfaceP8dispatch9eventType0G4DataySS_ypSgtF",
+            "moduleName": "DynamicEventBusBase",
+            "genericSig": "<τ_0_0 where τ_0_0 : DynamicEventBusBase.DynamicEventBusInterface>",
+            "sugared_genericSig": "<Self where Self : DynamicEventBusBase.DynamicEventBusInterface>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:19DynamicEventBusBase0abC9InterfaceP",
+        "mangledName": "$s19DynamicEventBusBase0abC9InterfaceP",
+        "moduleName": "DynamicEventBusBase",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DynamicEventBusBase"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DynamicEventBusConnector",
+        "printedName": "DynamicEventBusConnector",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "dispatch",
+            "printedName": "dispatch(eventType:eventData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19DynamicEventBusBase0abC9ConnectorC8dispatch9eventType0G4DataySS_ypSgtF",
+            "mangledName": "$s19DynamicEventBusBase0abC9ConnectorC8dispatch9eventType0G4DataySS_ypSgtF",
+            "moduleName": "DynamicEventBusBase",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disconnect",
+            "printedName": "disconnect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19DynamicEventBusBase0abC9ConnectorC10disconnectyyF",
+            "mangledName": "$s19DynamicEventBusBase0abC9ConnectorC10disconnectyyF",
+            "moduleName": "DynamicEventBusBase",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "builder",
+            "printedName": "builder()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Builder",
+                "printedName": "DynamicEventBusBase.DynamicEventBusConnector.Builder",
+                "usr": "s:19DynamicEventBusBase0abC9ConnectorC7BuilderC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19DynamicEventBusBase0abC9ConnectorC7builderAC7BuilderCyFZ",
+            "mangledName": "$s19DynamicEventBusBase0abC9ConnectorC7builderAC7BuilderCyFZ",
+            "moduleName": "DynamicEventBusBase",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Builder",
+            "printedName": "Builder",
+            "children": [
+              {
+                "kind": "Function",
+                "name": "withEventBus",
+                "printedName": "withEventBus(eventBus:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "DynamicEventBusBase.DynamicEventBusConnector.Builder",
+                    "usr": "s:19DynamicEventBusBase0abC9ConnectorC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DynamicEventBusInterface",
+                    "printedName": "any DynamicEventBusBase.DynamicEventBusInterface",
+                    "usr": "s:19DynamicEventBusBase0abC9InterfaceP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:19DynamicEventBusBase0abC9ConnectorC7BuilderC04withbC005eventC0AeA0abC9Interface_p_tF",
+                "mangledName": "$s19DynamicEventBusBase0abC9ConnectorC7BuilderC04withbC005eventC0AeA0abC9Interface_p_tF",
+                "moduleName": "DynamicEventBusBase",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "withEventListener",
+                "printedName": "withEventListener(listener:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "DynamicEventBusBase.DynamicEventBusConnector.Builder",
+                    "usr": "s:19DynamicEventBusBase0abC9ConnectorC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DynamicEventListener",
+                    "printedName": "any DynamicEventBusBase.DynamicEventListener",
+                    "usr": "s:19DynamicEventBusBase0aB8ListenerP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:19DynamicEventBusBase0abC9ConnectorC7BuilderC04withB8Listener8listenerAeA0abH0_p_tF",
+                "mangledName": "$s19DynamicEventBusBase0abC9ConnectorC7BuilderC04withB8Listener8listenerAeA0abH0_p_tF",
+                "moduleName": "DynamicEventBusBase",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "build",
+                "printedName": "build()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DynamicEventBusConnector",
+                    "printedName": "DynamicEventBusBase.DynamicEventBusConnector",
+                    "usr": "s:19DynamicEventBusBase0abC9ConnectorC"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:19DynamicEventBusBase0abC9ConnectorC7BuilderC5buildACyKF",
+                "mangledName": "$s19DynamicEventBusBase0abC9ConnectorC7BuilderC5buildACyKF",
+                "moduleName": "DynamicEventBusBase",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "throwing": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:19DynamicEventBusBase0abC9ConnectorC7BuilderC",
+            "mangledName": "$s19DynamicEventBusBase0abC9ConnectorC7BuilderC",
+            "moduleName": "DynamicEventBusBase",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasMissingDesignatedInitializers": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:19DynamicEventBusBase0abC9ConnectorC",
+        "mangledName": "$s19DynamicEventBusBase0abC9ConnectorC",
+        "moduleName": "DynamicEventBusBase",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Volumes\/Data\/source_projects\/superapp_sdk\/packages\/dynamic_event_bus\/ios\/DynamicEventBusBase\/DynamicEventBusBase\/DynamicEventBusBase\/DynamicEventBusConnector.swift",
+      "kind": "StringLiteral",
+      "offset": 297,
+      "length": 19,
+      "value": "\"EventBusConnector\""
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target x86_64-apple-ios18.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DynamicEventBusBase
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers public class EventBusProvider {
+  public static func setEventBus(eventBus: any DynamicEventBusBase.DynamicEventBusInterface)
+  public static func getEventBus() -> (any DynamicEventBusBase.DynamicEventBusInterface)?
+  @objc deinit
+}
+public protocol DynamicEventListener : AnyObject {
+  func onEventReceived(eventType: Swift.String, eventData: Any?)
+}
+public protocol DynamicEventBusInterface : AnyObject {
+  func addEventListener(listener: any DynamicEventBusBase.DynamicEventListener)
+  func removeEventListener(listener: any DynamicEventBusBase.DynamicEventListener) throws
+  func dispatch(eventType: Swift.String, eventData: Any?)
+}
+@_hasMissingDesignatedInitializers public class DynamicEventBusConnector {
+  public func dispatch(eventType: Swift.String, eventData: Any?)
+  public func disconnect()
+  public static func builder() -> DynamicEventBusBase.DynamicEventBusConnector.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func withEventBus(eventBus: any DynamicEventBusBase.DynamicEventBusInterface) -> DynamicEventBusBase.DynamicEventBusConnector.Builder
+    public func withEventListener(listener: any DynamicEventBusBase.DynamicEventListener) -> DynamicEventBusBase.DynamicEventBusConnector.Builder
+    public func build() throws -> DynamicEventBusBase.DynamicEventBusConnector
+    @objc deinit
+  }
+  @objc deinit
+}
