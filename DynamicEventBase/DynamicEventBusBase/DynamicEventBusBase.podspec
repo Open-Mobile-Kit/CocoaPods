@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version          = '0.0.1'
   s.summary          = 'Dynamic Event Bus Base Framework'
   s.description      = 'Framework that provides dynamic event bus functionality'
-  s.homepage         = 'http://yourcompany.com'
+  s.homepage         = 'https://github.com/Open-Mobile-Kit/CocoaPods'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Open Mobile Kit' => 'openmobilekit@gmail.com' }
   s.source           = { :git => 'https://github.com/Open-Mobile-Kit/CocoaPods.git', :tag => s.version.to_s }
